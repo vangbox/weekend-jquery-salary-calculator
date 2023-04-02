@@ -30,3 +30,11 @@ table {
 .inputs{
     color: red;
 }
+
+#annual-salary{
+    color: black;
+}
+
+p{
+    text-align: right;
+}

@@ -21,9 +21,9 @@ function onSubmit(event){
             <td>${lastName}</td>
             <td>${idNumber}</td>
             <td>${jobTitle}</td>
-            <td>${annualSalary}</td>
+            <td align="right">${annualSalary}</td>
 
-            <td>
+            <td align="center">
                 <button class='delete-button'>🗑️</button
             </td>
 
