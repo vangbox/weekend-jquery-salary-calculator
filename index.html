@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <title>Salary Calculator</title>
+</head>
+<body>
+
+<header>Salary Calculator</header>
+
+
+<section>
+    <h1>Add Employee</h1>
+    <form>
+        <input
+            id="first-name"
+            placeholder="First Name"
+            type="text">
+        <input
+            id="last-name"
+            placeholder="Last Name"
+            type="text">
+        <input
+            id="id-number"
+            placeholder="ID Number"
+            type="text">
+        <input
+            id="job-title"
+            placeholder="Job Title"
+            type="text">
+        <input
+            id="annual-salary"
+            placeholder="Annual Salary"
+            type="text">
+
+        <button id="submit-button" class="submit-button">Submit</button>
+        
+    </form>
+</section>
+
+
+
+<section>
+    <h2>Employee Information</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>   
+            <th>ID Number</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th>Delete</th>
+        </tr>
+        <tbody id="tbody">
+    <!-- This is where input goes -->
+        </tbody>
+    </table>
+</section>
+
+    
+</body>
+</html>
