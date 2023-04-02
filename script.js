@@ -46,8 +46,12 @@ function onSubmit(event){
     let total = start + num;
     $('#total-annual-salary').text(total);
     
-
+    if($('#total-annual-salary' > Number(20000).text())){
+    $('#total-annual-salary').css('background', 'red');
+    }   
 };
+
+
 
 
 function onDelete(){
