@@ -4,7 +4,6 @@ function onReady(){
     //console.log('Tester'); - it works!
 
     $('#submit-button').on('click', onSubmit);
-   
     $('#tbody').on('click', '.delete-button', onDelete);
 }
 
@@ -32,6 +31,7 @@ function onSubmit(event){
     `)
 
 
+
     let totalAnnualSalaryNum = Number($('#total-annual-salary').text());
     let annualSalaryNum = annualSalary/12 +totalAnnualSalaryNum;
     // console.log(annualSalaryNum);
@@ -40,10 +40,27 @@ function onSubmit(event){
    
     if(annualSalaryNum > 20000){
     //console.log("test red"); test - it works!
-    $('#total-annual-salary').css('background', 'red');
+        $('#total-annual-salary').css('background', 'red');
     }   
+    else{
+        $('#total-annual-salary').css('background');
+    }
   
+    //refresh the inputs
+    firstName = $('#first-name').val('');
+    lastName = $('#last-name').val('');
+    idNumber = $('#id-number').val('');
+    jobTitle = $('#job-title').val('');
+    annualSalary = $('#annual-salary').val('');
+
 };
+
+
+
+function onDelete(){
+
+    $(this).closest('tr').remove();
+}
 
 
 
@@ -92,8 +109,3 @@ function onSubmit(event){
     //         $('#total-annual-salary').text = totalAnnual;
     //         Number($('#total-annual-salary').text(totalAnnual));
     // })
-
-function onDelete(){
-    $(this).closest('tr').remove();
-}
-
