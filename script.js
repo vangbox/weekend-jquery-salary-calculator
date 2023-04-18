@@ -17,7 +17,6 @@ function onSubmit(event){
     let jobTitle = $('#job-title').val();
     let annualSalary = $('#annual-salary').val();
     
-    
     render(firstName,lastName,idNumber,jobTitle,annualSalary);
     totalAnnualSalary(annualSalary);
     overAnnualSalaryNum(annualSalaryNum);
